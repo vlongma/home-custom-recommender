@@ -1,0 +1,4 @@
+interface:
+  display_name: "全屋定制推荐"
+  short_description: "Match vetted custom-home vendors to renovation needs"
+  default_prompt: "Use $home-custom-recommender to recommend suitable whole-home customization vendors from my vetted spreadsheet."
