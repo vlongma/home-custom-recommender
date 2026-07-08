@@ -176,25 +176,26 @@ def enrich_record(record: dict[str, str]) -> dict[str, str]:
     if record["record_id"] == "HZ-004":
         official_note = (
             "官网补充：澎升设计 Pengsheng Design，定位为杭州本土化设计公司，强调私宅设计、产品设计、"
-            "软装与全屋定制服务；官网列出全屋定制木作、拱墅工作室和临平木作展厅。"
+            "软装与全屋定制服务；官网列出木作/全屋定制、拱墅工作室和临平全屋定制木作展厅。"
         )
         record["vendor_name"] = "澎升设计 Pengsheng Design"
         record["official_website"] = "https://pengshengdesign.com"
-        record["official_phone"] = "+86 153-7203-0216"
-        record["official_email"] = "info@pengshengdesign.com"
-        record["official_wechat"] = "Tanya0324"
-        record["address"] = "浙江省杭州市拱墅区祥茂路2号影天像素园5幢A座402室"
+        record["official_phone"] = "+86 13735800742"
+        record["official_email"] = "m5637379@gmail.com"
+        record["official_wechat"] = "PengshengDesign"
+        record["address"] = "杭州市拱墅区影天像素园澎升设计"
         record["district"] = "拱墅区"
         record["showroom_locations"] = (
-            "拱墅工作室：浙江省杭州市拱墅区祥茂路2号影天像素园5幢A座402室；"
-            "临平木作展厅：浙江省杭州市临平区顺风路536号32幢101室"
+            "拱墅工作室：杭州市拱墅区影天像素园澎升设计；"
+            "临平全屋定制木作展厅：杭州市临平区元星大厦澎升设计"
         )
         record["service_area"] = (
-            "杭州 拱墅区 临平区；拱墅工作室；临平木作展厅；"
-            "浙江省杭州市拱墅区祥茂路2号影天像素园5幢A座402室"
+            "杭州 拱墅区 临平区；拱墅工作室；临平全屋定制木作展厅；"
+            "杭州市拱墅区影天像素园澎升设计；杭州市临平区元星大厦澎升设计"
         )
         record["scope"] = "全屋定制；柜体定制；整案/设计服务；私宅设计；软装；全屋定制木作"
         record["store_type"] = "设计公司/工作室/木作展厅"
+        record["verification_date"] = "2026-07-08"
         record["creator_comment"] = clean(record["creator_comment"] + "；" + official_note)
         record["source_name"] = clean(record["source_name"] + "；pengshengdesign.com 官网")
         record["source_path_or_url"] = clean(record["source_path_or_url"] + "；https://pengshengdesign.com；https://pengshengdesign.com/contact；https://pengshengdesign.com/millwork")

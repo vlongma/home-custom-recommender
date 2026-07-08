@@ -40,6 +40,17 @@ Do not hide uncertainty. Instead of saying the source says something, translate 
 - Recent public check is inconclusive: `我没有看到足够新的公开风险信号，但合同和付款节点仍要核对。`
 - Recent public check finds a concern: `我会降低它的优先级，除非你能在咨询中拿到明确解释和合同约束。`
 
+## Contact and address handling
+
+Only output phone, WeChat, email, or exact address when it exists in current official fields or was freshly verified from an official site in this conversation.
+
+Do not infer missing room numbers, street numbers, contacts, or showroom addresses from older notes. If the official site gives a broad location, keep it broad:
+
+- Prefer: `官网标注有拱墅工作室和临平全屋定制木作展厅。`
+- Avoid: inventing or repeating unverified details like a specific building, room, or phone number.
+
+When recommending a visit, say `预约前先用官网电话/微信确认当前到访点位` if there is any chance the location details may change.
+
 ## Final answer structure
 
 Use this shape:
