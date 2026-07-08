@@ -27,6 +27,8 @@ Do not jump straight to recommendations from city and budget alone. Ask follow-u
 
 Prefer guided selection over open-ended forms. Ask one topic per turn, show 2-4 likely options, and always allow "其他/我补充" and "跳过". If the runtime supports native choice UI, use it. If not, render numbered choices in text and let the user answer with a number, short phrase, or mixed natural language.
 
+After asking one guided question, stop the assistant turn. Do not ask a second question, render a second question card, or place the next numbered question below a native choice UI in the same message.
+
 Required minimum before ranking:
 
 - City plus district or nearby city acceptance.
