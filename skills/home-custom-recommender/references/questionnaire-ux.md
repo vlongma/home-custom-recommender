@@ -7,12 +7,30 @@ Use this reference when interviewing an end user. The goal is to feel like a gui
 - Ask one topic per turn.
 - After asking one question, stop. Do not confirm the answer, ask the next question, or summarize progress in the same assistant turn.
 - Prefer 2-4 choices plus `其他/我补充` and `跳过`.
-- If the runtime provides a native choice/picker UI, use it.
-- If no native choice UI is available, render numbered choices in text.
+- If the host app provides clickable choice UI, always use it.
+- Use numbered text only when no clickable choice UI is available.
 - Accept clicks, numbers, option labels, and natural-language replies.
 - Confirm important inferred details only at the beginning of the next assistant turn, then ask exactly one next question.
 - Do not force the user to answer every detail before making progress.
-- Never output internal reasoning, hidden-state tags, "thought process" labels, or meta comments about following the stop rule.
+- Do not output private reasoning, planning notes, progress notes, implementation notes, or any tag-like markup. The user-facing message should contain only the actual conversation.
+
+## Visible output contract
+
+During the interview phase, every user-facing assistant message must contain only:
+
+1. An optional short acknowledgement in Chinese.
+2. Exactly one question.
+3. The clickable choices or numbered fallback choices for that one question.
+4. Optional one-line input hint.
+
+Do not include:
+
+- English planning notes.
+- Analysis of the questionnaire flow.
+- Future-step notes.
+- Process-transition notes.
+- Any markup-like opening or closing tags.
+- Any separate reasoning/process section.
 
 ## Single-question stop rule
 
@@ -23,9 +41,9 @@ This rule is strict:
 3. If the user just answered a choice, acknowledge briefly and ask exactly one next question, then stop.
 4. Never show "Question 2" and "Question 3" in the same assistant message.
 5. Never combine a visible choice card with the next numbered question in the same assistant message.
-6. Never include internal stop-rule reminders in the user-facing message.
+6. Never include stop-rule reminders, planning notes, or process notes in the user-facing message.
 
-Good:
+Use this shape:
 
 ```text
 好，新房毛坯。
@@ -37,15 +55,6 @@ Good:
 3. 130-180㎡
 4. 180㎡以上
 5. 其他，我补充
-```
-
-Bad:
-
-```text
-好，新房毛坯，130-180㎡，3-4室。
-
-第三问：你打算做哪些定制内容？
-...
 ```
 
 ## Text fallback format
