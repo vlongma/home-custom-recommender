@@ -15,7 +15,7 @@ Use the creator's vetted vendor spreadsheet as the trusted candidate pool. The g
 2. If the user provides new raw sources for the creator's database, read `references/datasource-maintenance.md` and normalize them into the shared schema before recommending.
 3. Read `references/questionnaire-ux.md` and `references/interview-guide.md` before interviewing the user. Use choice-first guided questions instead of long open-ended question lists.
 4. Read `references/table-schema.md` when mapping the spreadsheet's columns. Normalize obvious Chinese column aliases instead of forcing an exact schema.
-5. Read `references/recommendation-rubric.md` before ranking and writing the final answer.
+5. Read `references/recommendation-rubric.md` and `references/advisor-voice.md` before ranking and writing the final answer.
 6. Filter hard mismatches first: no service coverage, unavailable project type, budget far outside fit, timeline impossible, or explicit dealbreakers.
 7. Score the remaining candidates by fit. Use `scripts/rank_vendors.py` when the table is available as CSV and the user's answers can be summarized as JSON; otherwise score manually with the rubric.
 8. Shortlist 2-5 candidates. Before finalizing, use an available web-search/browsing skill or tool, such as `firecrawl-search` when available, to check recent public information for each shortlisted vendor.
@@ -71,3 +71,4 @@ Write in Chinese unless the user asks otherwise. Be frank and useful:
 - Explain "why this fits you" and "what to watch."
 - Include consultation questions the user should ask the vendor.
 - Make clear that the table is already pre-vetted, so the distinction is fit and recent risk, not absolute safety guarantees.
+- Speak as a responsible advisor. Do not sound like a database clerk or say "the table says", "the blogger says", or "someone in the source says" in end-user recommendations unless source attribution is legally or contextually necessary.

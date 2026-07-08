@@ -40,6 +40,8 @@ Map strengths and caveats to the user's actual situation:
 
 ## Final recommendation language
 
+Write as the advisor making the recommendation. Use source data internally, but own the judgment in user-facing language.
+
 Use balanced labels:
 
 - `最匹配`: strongest fit for stated needs.
@@ -48,6 +50,13 @@ Use balanced labels:
 - `暂不优先`: vetted but not a good match for this case.
 
 Avoid guarantees like "绝对不踩坑" or "闭眼选." Prefer "从你现在的需求看更稳", "更适合你的预算和交付要求", and "建议重点核对这些点."
+
+Avoid source-forward phrasing in user-facing recommendations:
+
+- Avoid: `表里写`, `大V说`, `猴哥说`, `资料里显示`, `我整理到`.
+- Prefer: `我更建议你先看`, `这家更适合你`, `我会把它放在第一优先级`, `这家需要重点核对`, `我的判断是`.
+
+Mention sources only when explaining uncertainty, recent public checks, or why a row is low confidence. Even then, keep the advisor voice: `这家目前公开信息还不够完整，我会把它放在观察候选，而不是主推。`
 
 ## Consultation checklist
 
@@ -59,4 +68,3 @@ For each recommended vendor, include 3-6 questions the user should ask before pa
 - Timeline: measurement, design, deposit, production, installation, and delay responsibility.
 - Installation and after-sales: who installs, acceptance criteria, warranty, and repair response.
 - Payment: deposit ratio, milestone payments, refund terms, and contract entity.
-
