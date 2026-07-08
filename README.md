@@ -17,6 +17,7 @@
 - `data/whole-home-customization-vendors.public.xlsx`: 公开版 Excel 副本。
 - `examples/hangzhou-gongshu-request.json`: 示例用户需求。
 - `install.sh`: 一键安装 skill 到本机 Codex skills 目录。
+- `update.sh`: 拉取最新版并重装本机 skill。
 
 ## Install
 
@@ -33,6 +34,28 @@ If you prefer manual install:
 ```bash
 cp -R skills/home-custom-recommender "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
+
+## Update
+
+Installed skills do not update automatically. When this repository publishes new vendor data or skill behavior, update from your local clone:
+
+```bash
+cd home-custom-recommender
+./update.sh
+```
+
+`update.sh` will run `git pull --ff-only` when the folder is a Git clone, remove the old installed skill, copy the latest bundled skill and official vendor table into Codex, and ask you to restart Codex.
+
+If you prefer manual update:
+
+```bash
+cd home-custom-recommender
+git pull
+rm -rf "${CODEX_HOME:-$HOME/.codex}/skills/home-custom-recommender"
+cp -R skills/home-custom-recommender "${CODEX_HOME:-$HOME/.codex}/skills/"
+```
+
+Restart Codex after updating.
 
 ## Use
 
