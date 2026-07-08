@@ -9,9 +9,10 @@ Use this reference when interviewing an end user. The goal is to feel like a gui
 - Prefer 2-4 choices plus `其他/我补充` and `跳过`.
 - If the runtime provides a native choice/picker UI, use it.
 - If no native choice UI is available, render numbered choices in text.
-- Accept numbers, option labels, and natural-language replies.
+- Accept clicks, numbers, option labels, and natural-language replies.
 - Confirm important inferred details only at the beginning of the next assistant turn, then ask exactly one next question.
 - Do not force the user to answer every detail before making progress.
+- Never output internal reasoning, hidden-state tags, "thought process" labels, or meta comments about following the stop rule.
 
 ## Single-question stop rule
 
@@ -22,6 +23,7 @@ This rule is strict:
 3. If the user just answered a choice, acknowledge briefly and ask exactly one next question, then stop.
 4. Never show "Question 2" and "Question 3" in the same assistant message.
 5. Never combine a visible choice card with the next numbered question in the same assistant message.
+6. Never include internal stop-rule reminders in the user-facing message.
 
 Good:
 
@@ -58,7 +60,7 @@ Use this pattern when native choice UI is unavailable:
 3. 不在杭州
 4. 其他，我补充
 
-你可以直接回数字。
+如果界面有可点选项，直接点选；没有的话，回编号或文字都可以。
 ```
 
 Avoid asking more than one numbered question in the same turn. Do this even if the user seems comfortable. Only switch to a compact form when the user explicitly asks to speed up.
@@ -93,7 +95,7 @@ Then ask district if the city has matching data.
 
 ### 3. Project scope
 
-Allow multi-select by saying the user can pick multiple numbers:
+Allow multi-select by saying the user can pick multiple options:
 
 ```text
 这次主要想做哪些部分？可以多选。
