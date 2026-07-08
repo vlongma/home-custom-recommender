@@ -13,7 +13,7 @@ Use the creator's vetted vendor spreadsheet as the trusted candidate pool. The g
 
 1. Use the bundled official vendor table at `assets/default-vendors.csv` unless the creator/maintainer explicitly provides a newer official data file. Do not ask ordinary end users to replace the table.
 2. If the user provides new raw sources for the creator's database, read `references/datasource-maintenance.md` and normalize them into the shared schema before recommending.
-3. Read `references/interview-guide.md` before interviewing the user. Ask questions in small batches, but be thorough enough to understand region, project scope, budget, style, materials, timeline, service expectations, and dealbreakers.
+3. Read `references/questionnaire-ux.md` and `references/interview-guide.md` before interviewing the user. Use choice-first guided questions instead of long open-ended question lists.
 4. Read `references/table-schema.md` when mapping the spreadsheet's columns. Normalize obvious Chinese column aliases instead of forcing an exact schema.
 5. Read `references/recommendation-rubric.md` before ranking and writing the final answer.
 6. Filter hard mismatches first: no service coverage, unavailable project type, budget far outside fit, timeline impossible, or explicit dealbreakers.
@@ -24,6 +24,8 @@ Use the creator's vetted vendor spreadsheet as the trusted candidate pool. The g
 ## Interview Rules
 
 Do not jump straight to recommendations from city and budget alone. Ask follow-up questions when the user's answer is vague, contradictory, or too broad.
+
+Prefer guided selection over open-ended forms. Ask one topic per turn, show 2-4 likely options, and always allow "其他/我补充" and "跳过". If the runtime supports native choice UI, use it. If not, render numbered choices in text and let the user answer with a number, short phrase, or mixed natural language.
 
 Required minimum before ranking:
 
@@ -36,6 +38,8 @@ Required minimum before ranking:
 - Preferred style and tolerance for design experimentation.
 - Materials/environmental expectations and household constraints, such as children, elderly family members, pets, allergies, or urgent move-in.
 - Timeline and acceptable communication/service model.
+
+Do not ask the required minimum as one large checklist. Gather it through several lightweight choice-first turns.
 
 ## Spreadsheet Handling
 

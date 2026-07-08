@@ -4,6 +4,8 @@
 
 它适合博主、装修顾问或社群运营者发布一份自己维护的官方商家名单，然后通过问询用户的城市、预算、风格、材料、工期和雷点，给出更合适的商家推荐。下载者不需要替换表格。
 
+交互方式默认是选择题引导：每轮只问一个主题，优先给 2-4 个选项，并允许用户选择“其他/跳过”。如果运行环境支持原生选择框，skill 会优先使用原生选择控件；否则会用编号选项作为 fallback。
+
 ## What is included
 
 - `skills/home-custom-recommender/`: Codex skill。
@@ -45,6 +47,14 @@ Chinese prompt example:
 ```text
 用 $home-custom-recommender 根据内置官方商家表，帮我给一个杭州拱墅区、精装局改、预算 10-20 万的用户推荐全屋定制商家。
 ```
+
+For a guided interview, start naturally:
+
+```text
+用 $home-custom-recommender，我想装修。
+```
+
+The skill should ask choice-first questions instead of giving the user a long open-ended form.
 
 ## Data model
 
