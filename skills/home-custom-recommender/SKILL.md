@@ -1,6 +1,6 @@
 ---
 name: home-custom-recommender
-description: Recommend suitable whole-home customization, cabinet, storage, or interior design vendors from a creator-maintained vetted spreadsheet. Use when a user wants help choosing a reliable full-home custom furniture/design company, avoiding low-price traps or false advertising, matching vendors by city/region, budget, style, materials, project scope, timeline, and service preference, or turning a vetted vendor table into personalized recommendations. Ask detailed questions first, filter and score the spreadsheet, then perform a fresh web check for recent public information before giving a balanced recommendation.
+description: Recommend suitable whole-home customization, custom cabinet, kitchen cabinet, wardrobe, storage, and interior design vendors from a creator-maintained vetted vendor database. Use for Chinese renovation scenarios such as 全屋定制推荐, 杭州全屋定制, 杭州全屋定制哪家靠谱, 全屋定制避坑, 装修避坑, 精装房改造, 二手房翻新, 开放式厨房改造, 橱柜定制, 衣柜定制, 全屋柜体, 设计统筹, 装修顾问, 装修博主工具, and reliable vendor whitelist recommendations. Ask guided choice-first questions, match by city/region, budget, style, materials, project scope, timeline, and dealbreakers, then perform a fresh web check for recent public information before giving a responsible advisor-style recommendation.
 ---
 
 # Home Custom Recommender

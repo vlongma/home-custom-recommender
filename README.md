@@ -1,6 +1,6 @@
 # Home Custom Recommender
 
-一个用于“全屋定制/柜体定制/设计统筹”推荐的 Codex skill，内置一份官方维护的商家数据源。
+一个用于“全屋定制/柜体定制/设计统筹”推荐的 Codex skill，内置一份官方维护的商家数据源。适合搜索和使用场景包括：杭州全屋定制推荐、全屋定制避坑、装修避坑、精装房改造、二手房翻新、开放式厨房改造、橱柜定制、衣柜定制、全屋柜体、设计工作室推荐、靠谱商家白名单、装修顾问、装修博主工具。
 
 它适合博主、装修顾问或社群运营者发布一份自己维护的官方商家名单，然后通过问询用户的城市、预算、风格、材料、工期和雷点，给出更合适的商家推荐。下载者不需要替换表格。
 
@@ -18,6 +18,58 @@
 - `examples/hangzhou-gongshu-request.json`: 示例用户需求。
 - `install.sh`: 一键安装 skill 到本机 Codex skills 目录。
 - `update.sh`: 拉取最新版并重装本机 skill。
+
+## Keywords
+
+中文关键词：
+
+- 全屋定制推荐
+- 杭州全屋定制
+- 杭州全屋定制哪家靠谱
+- 全屋定制避坑
+- 装修避坑
+- 装修商家推荐
+- 靠谱全屋定制
+- 全屋定制白名单
+- 柜体定制
+- 橱柜定制
+- 衣柜定制
+- 全屋柜体
+- 精装房改造
+- 二手房翻新
+- 开放式厨房改造
+- 中古风装修
+- 设计统筹
+- 装修顾问
+- 装修博主工具
+- Codex skill
+
+English keywords:
+
+- whole home customization
+- custom cabinets
+- cabinet vendor recommendation
+- renovation advisor
+- interior design vendor
+- home renovation assistant
+- vetted vendor database
+- Codex skill
+
+Suggested GitHub topics:
+
+```text
+codex-skill
+home-renovation
+interior-design
+custom-cabinets
+whole-home-customization
+vendor-recommendation
+renovation-advisor
+装修
+全屋定制
+杭州全屋定制
+装修避坑
+```
 
 ## Install
 
